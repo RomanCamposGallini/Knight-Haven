@@ -490,3 +490,110 @@ footer div p {
     color: #BBE1FA;
     text-align: end;
 }
+
+/* MEDIA QUERIE 1024px*/
+
+@media (max-width: 1024px) {
+
+/* INTRO */
+
+.intro p {
+    grid-column: 6/12;
+}
+
+.intro h1 {
+    grid-column: 3/12;
+}
+
+.intro img {
+    grid-column: 1;
+}
+
+/* Catalogo */
+
+.main-catalogo {
+    padding: 1.875rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+/* Noticias */
+
+.main-noticias {
+    padding: 1.875rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: .9375rem;
+}
+
+.main-noticias div {
+    width: 100%;
+}
+
+/* Eventos */
+
+.main-eventos {
+    padding: 1.875rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: .9375rem;
+}
+
+.main-eventos div {
+    width: 100%;
+    height: 26.25rem;
+}
+
+/* PAGINA CATALOGO */
+
+.juegos {
+    padding: 1.875rem;
+}
+
+.juegos div {
+    width: 26.25rem;
+    height: auto;;
+    grid-template-rows: 5.3125rem 2.5rem auto 5.3125rem;
+    column-gap: .625rem;
+}
+
+.juegos div h2 {
+    font-size: 1.5rem;
+}
+
+.juegos div img {
+    height: 19.5rem;
+    width: 12.8125rem;
+    object-fit: cover;
+}
+
+.juegos div p {
+    font-size: 1rem;
+    padding: 0;
+}
+
+.juegos div .p2 {
+    font-size: 1.25rem;
+}
+
+/* PAGINA NOTICIAS */
+
+.noticias .noti-1 {
+    margin-right: .625rem;
+}
+
+.noticias .noti-2 {
+    margin-left: .625rem;
+}
+
+.noticias div h2 {
+    font-size: 1.5rem;
+}
+
+.noticias div p {
+    font-size: 1.25rem;
+}
+}
