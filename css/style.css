@@ -302,6 +302,12 @@ button {
 
 /* PAGINA CATALOGO */
 
+.juegos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1.875rem;
+}
+
 .juegos div {
     width: 38.125rem;
     height: 30rem;
@@ -491,109 +497,178 @@ footer div p {
     text-align: end;
 }
 
-/* MEDIA QUERIE 1024px*/
+/* RESPONSIVE */
 
-@media (max-width: 1024px) {
-
-/* INTRO */
-
-.intro p {
-    grid-column: 6/12;
+@media (max-width: 630px) {
+    
+    h1 {
+        padding: .3125rem .9375rem .3125rem .9375rem;
+        font-size: 1.5rem;
+        margin: .9375rem 0;
+    }
 }
 
-.intro h1 {
-    grid-column: 3/12;
+/* HEADER RESPONSIVE */
+
+@media (max-width: 930px) {
+
+    header nav img {
+        height: 2.8125rem;
+        width: 12.5rem;
+    }
+    header nav ul{
+        font-size: 1.5rem;
+    }
 }
 
-.intro img {
-    grid-column: 1;
+@media (max-width: 630px) {
+
+    header nav {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        font-size: 1rem;
+        margin-right: 0;
+    }
 }
 
-/* Catalogo */
+/* FOOTER RESPONSIVE */
 
-.main-catalogo {
-    padding: 1.875rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
+@media (max-width: 630px) {
+
+    footer {
+        padding: .625rem;
+    }
+
+    footer ul {
+        flex-direction: row;
+    }
+
+    footer ul li img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    footer ul li a p {
+        display: none;
+    }
+
+    footer div img {
+        height: 2.8125rem;
+        width: 12.5rem;
+    }
+
+    footer div p {
+        font-size: .625rem;
+    }
 }
 
-/* Noticias */
-
-.main-noticias {
-    padding: 1.875rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    gap: .9375rem;
+@media (max-width: 375px) {
+    footer div img {
+        height: 2.1875rem;
+        width: 9.375rem;
+    }
 }
 
-.main-noticias div {
-    width: 100%;
+/* CATÁLOGO REPONSIVE */
+
+@media (max-width: 1350px) {
+
+    .juegos {
+        padding: 1.875rem;
+    }
+    
+    .juegos div {
+        width: 34.375rem;
+        height: auto;;
+        grid-template-rows: 5.3125rem 2.5rem auto 5.3125rem;
+        column-gap: .625rem;
+    }
+    
+    .juegos div h2 {
+        font-size: 1.5rem;
+    }
+    
+    .juegos div img {
+        height: 19.5rem;
+        width: 12.8125rem;
+        object-fit: cover;
+    }
+    
+    .juegos div p {
+        font-size: 1rem;
+        padding: 0;
+    }
+    
+    .juegos div .p2 {
+        font-size: 1.25rem;
+    }
 }
 
-/* Eventos */
+@media (max-width: 1240px) {
 
-.main-eventos {
-    padding: 1.875rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    gap: .9375rem;
+    .juegos div {
+        width: 25rem;
+    }
 }
 
-.main-eventos div {
-    width: 100%;
-    height: 26.25rem;
+@media (max-width: 930px) {
+
+    .juegos {
+        display: flex;
+    }
+
+    .juegos div {
+        width: 80%;
+    }
 }
 
-/* PAGINA CATALOGO */
+@media (max-width: 630px) {
 
-.juegos {
-    padding: 1.875rem;
-}
+    .juegos {
+        padding: .3125rem;
+        margin: 0 .3125rem .3125rem .3125rem;
+    }
+    
+    .juegos div {
+        width: 18.125rem;
+        height: auto;
+        grid-template-rows: auto 1.25rem auto 3.125rem;
+        column-gap: .3125rem;
+        row-gap: .3125rem;
+        padding: .25rem;
+        grid-template-areas:
+        "img h2"
+        "img p"
+        "img p2"
+        "but but";
+    }
+    
+    .juegos div h2 {
+        font-size: 1.25rem;
+    }
+    
+    .juegos div img {
+        height: 14.375rem;
+        width: 9.0625rem;
+        object-fit: cover;
+    }
+    
+    .juegos div p {
+        font-size: .625rem;
+        padding: 0;
+    }
+    
+    .juegos div .p2 {
+        font-size: .8125rem;
+    }
 
-.juegos div {
-    width: 26.25rem;
-    height: auto;;
-    grid-template-rows: 5.3125rem 2.5rem auto 5.3125rem;
-    column-gap: .625rem;
-}
-
-.juegos div h2 {
-    font-size: 1.5rem;
-}
-
-.juegos div img {
-    height: 19.5rem;
-    width: 12.8125rem;
-    object-fit: cover;
-}
-
-.juegos div p {
-    font-size: 1rem;
-    padding: 0;
-}
-
-.juegos div .p2 {
-    font-size: 1.25rem;
-}
-
-/* PAGINA NOTICIAS */
-
-.noticias .noti-1 {
-    margin-right: .625rem;
-}
-
-.noticias .noti-2 {
-    margin-left: .625rem;
-}
-
-.noticias div h2 {
-    font-size: 1.5rem;
-}
-
-.noticias div p {
-    font-size: 1.25rem;
-}
+    .juegos div button {
+        grid-area: but;
+        font-size: 1.5rem;
+        align-self: flex-end;
+        margin: auto;
+        margin-bottom: .3125rem;
+    }
 }
