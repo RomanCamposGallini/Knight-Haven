@@ -121,7 +121,7 @@ section p {
     font-family: "Berkshire Swash", serif;
     text-align: center;
     color: #BBE1FA;
-    padding: 4.375rem 15rem;
+    padding: 10% 20%;
     font-size: 2.25rem;
 }
 
@@ -206,7 +206,7 @@ button {
 
 .bloque div p{
     font-family: "Poetsen One", sans-serif;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     padding: .625rem 0;
 }
 
@@ -501,10 +501,37 @@ footer div p {
 
 @media (max-width: 630px) {
     
+    main {
+        padding-bottom: .625rem;
+    }
     h1 {
         padding: .3125rem .9375rem .3125rem .9375rem;
-        font-size: 1.5rem;
+        font-size: 1.125rem;
         margin: .9375rem 0;
+        border: .125rem solid #BBE1FA;
+    }
+
+    section p {
+        font-size: .9375rem;
+    }
+
+    .main-page h2 {
+        padding: .3125rem .9375rem .3125rem .9375rem;
+        font-size: 1.125rem;
+        border: .125rem solid #BBE1FA;
+    }
+
+    .bloque {
+        padding: .3125rem;
+        margin: 0 .3125rem .3125rem .3125rem;
+    }
+
+    .bloque div {
+        padding: .25rem;
+    }
+
+    .bloque div h3 {
+        font-size: .75rem;
     }
 }
 
@@ -522,6 +549,10 @@ footer div p {
 }
 
 @media (max-width: 630px) {
+
+    header {
+        padding: .3125rem;
+    }
 
     header nav {
         flex-direction: column;
@@ -568,6 +599,136 @@ footer div p {
     footer div img {
         height: 2.1875rem;
         width: 9.375rem;
+    }
+}
+
+/* MAIN-PAGE RESPONSIVE */
+
+/* Intro */
+
+@media (max-width: 1260px) {
+
+    .intro p {
+        grid-column: 7/12;
+    }
+
+    .intro h1 {
+        grid-column: 4/12;
+        text-align: end;
+        font-size: 4.5rem;
+        padding: .3125rem 3.125rem .3125rem ;
+    }
+
+    .intro img {
+        grid-column: 3;
+    }
+}
+
+@media (max-width: 930px) {
+
+    .intro h1 {
+        grid-column: 2/12;
+        padding-right: 1.875rem;
+    }
+
+    .intro img {
+        grid-column: 1;
+    }
+}
+
+@media (max-width:755px) {
+
+    .intro {
+        height: 34.375rem;
+    }
+
+    .intro p {
+        font-size: 1.5rem;
+    }
+
+    .intro h1 {
+        font-size: 3rem;
+        padding-right: 10%;
+    }
+
+    .intro img {
+        width: 11.25rem;
+        height: 11.25rem;
+    }
+}
+
+@media (max-width:630px) {
+
+    .intro {
+        height: 15rem;
+    }
+
+    .intro h1 {
+        grid-column: 4/12;
+        font-size: 1.375rem;
+        border: .125rem solid #BBE1FA;
+    }
+
+    .intro p {
+        grid-column: 8/12;
+        font-size: .5625rem;
+        border: .125rem solid #BBE1FA;
+    }
+
+    .intro img {
+        grid-column: 3;
+        width: 4.0625rem;
+        height: 4.0625rem;
+        border: .125rem solid #BBE1FA;
+    }
+}
+
+/* Main Catalogo */
+
+@media (max-width: 630px) {
+
+    .main-catalogo div {
+        height: 13.125rem;
+        width: 7.5rem;
+        padding: .25rem;
+    }
+    
+    .main-catalogo div img {
+        height: 10.3125rem;
+    }
+
+/* Main Noticias */
+
+    .main-noticias img {
+        width: 8.75rem;
+        height: 12.1875rem;
+    }
+
+    .main-noticias div {
+        row-gap: .3125rem;
+    }
+
+    .main-noticias p {
+        font-size: .625rem;
+    }
+
+    .not-2 {
+        grid-template-rows: auto auto;
+        grid-template-areas:
+        "h3 h3"
+        "img p";
+    }
+
+    .not-2 p {
+        align-self: start;
+        text-align: left;
+    }
+
+/* Main Eventos */
+
+    .main-eventos div {
+        height: auto;
+        row-gap: .3125rem;
     }
 }
 
@@ -665,10 +826,7 @@ footer div p {
     }
 
     .juegos div button {
-        grid-area: but;
         font-size: 1.5rem;
-        align-self: flex-end;
-        margin: auto;
         margin-bottom: .3125rem;
     }
 }
