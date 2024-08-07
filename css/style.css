@@ -537,7 +537,7 @@ footer div p {
 
 /* HEADER RESPONSIVE */
 
-@media (max-width: 930px) {
+@media (max-width: 1100px) {
 
     header nav img {
         height: 2.8125rem;
@@ -548,7 +548,7 @@ footer div p {
     }
 }
 
-@media (max-width: 630px) {
+@media (max-width: 700px) {
 
     header {
         padding: .3125rem;
@@ -559,7 +559,7 @@ footer div p {
     }
 
     header nav ul {
-        font-size: 1rem;
+        font-size: 12px;
         margin-right: 0;
     }
 }
@@ -574,6 +574,7 @@ footer div p {
 
     footer ul {
         flex-direction: row;
+        padding: 0;
     }
 
     footer ul li img {
@@ -830,3 +831,10 @@ footer div p {
         margin-bottom: .3125rem;
     }
 }
+
+/* BOOTSTRAP */
+
+.carousel-item img {
+    max-height: 900px;
+}
+
