@@ -1,0 +1,21 @@
+@media (max-width: 1260px) {
+
+    .intro p {
+        grid-column: 7/12;
+    }
+
+    .intro h1 {
+        grid-column: 4/12;
+        text-align: end;
+        font-size: 4.5rem;
+        padding: .3125rem 3.125rem .3125rem ;
+    }
+
+    .intro img {
+        grid-column: 3;
+    }
+
+    .juegos div {
+        width: 25rem;
+    }
+}

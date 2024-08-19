@@ -1,0 +1,33 @@
+@import "./utilities/funciones";
+
+@import "./base/reset";
+@import "./base/fuentes";
+@import "./base/fondo";
+@import "./base/base";
+
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/intro";
+@import "./layout/main-catalogo";
+@import "./layout/main-eventos";
+@import "./layout/main-noticias";
+@import "./layout/catalogo";
+@import "./layout/noticias";
+@import "./layout/eventos";
+@import "./layout/foro";
+@import "./layout/footer";
+
+@import "./components/bloques";
+@import "./components/bootstrap";
+@import "./components/botones";
+@import "./components/form";
+@import "./components/input";
+
+@import "./layout/media/media1350";
+@import "./layout/media/media1260";
+@import "./layout/media/media1100";
+@import "./layout/media/media930";
+@import "./layout/media/media755";
+@import "./layout/media/media700";
+@import "./layout/media/media630";
+@import "./layout/media/media375";

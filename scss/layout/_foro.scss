@@ -1,0 +1,30 @@
+.foro {
+    position: relative;
+}
+
+.foro div {
+    padding: 1.875rem 0;
+    width: 75rem;
+    height: auto;
+}
+
+.foro img{
+    position: absolute;
+}
+
+#png-1 {
+    top: -1.25rem;
+    right: .625rem;
+}
+
+#png-2 {
+    bottom: -6.25rem;
+    left: -5rem;
+}
+
+.formulario {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: .9375rem;
+}

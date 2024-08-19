@@ -1,0 +1,35 @@
+.bloque {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 3.75rem;
+    margin: 0 1.875rem 1.875rem 1.875rem;
+    background-color: rgba(138, 136, 191, 0.5);
+}
+
+.bloque div {
+    background-color: rgba(30, 50, 89, 1);
+    padding: .625rem;
+    margin: .625rem;
+}
+
+.bloque div h2 {
+    font-family: "Poetsen One", sans-serif;
+    text-align: center;
+    color: #BBE1FA;
+    font-size: 2rem;
+}
+
+.bloque div h3 {
+    font-family: "Poetsen One", sans-serif;
+    text-align: center;
+    color: #BBE1FA;
+    font-size: 2rem;
+    margin: auto;
+}
+
+.bloque div p{
+    font-family: "Poetsen One", sans-serif;
+    /* font-size: 1.5rem; */
+    padding: .625rem 0;
+}

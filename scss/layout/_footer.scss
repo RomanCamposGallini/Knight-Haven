@@ -1,0 +1,37 @@
+footer {
+    background-color: rgba(30, 50, 89, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.875rem;
+}
+
+footer ul {
+    font-family: "Poetsen One", sans-serif;
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+}
+
+footer ul li a {
+    display: flex;
+    justify-content: row;
+    align-items: center;
+    text-decoration: none;
+}
+
+footer ul li p {
+    color: #BBE1FA;
+}
+
+footer ul li img {
+    width: 2.875rem;
+    height: 2.875rem;
+    margin: .625rem;
+}
+
+footer div p {
+    font-family: "Poetsen One", sans-serif;
+    color: #BBE1FA;
+    text-align: end;
+}

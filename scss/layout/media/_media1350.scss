@@ -1,0 +1,32 @@
+@media (max-width: 1350px) {
+
+    .juegos {
+        padding: 1.875rem;
+    }
+    
+    .juegos div {
+        width: 34.375rem;
+        height: auto;;
+        grid-template-rows: 5.3125rem 2.5rem auto 5.3125rem;
+        column-gap: .625rem;
+    }
+    
+    .juegos div h2 {
+        font-size: 1.5rem;
+    }
+    
+    .juegos div img {
+        height: 19.5rem;
+        width: 12.8125rem;
+        object-fit: cover;
+    }
+    
+    .juegos div p {
+        font-size: 1rem;
+        padding: 0;
+    }
+    
+    .juegos div .p2 {
+        font-size: 1.25rem;
+    }
+}

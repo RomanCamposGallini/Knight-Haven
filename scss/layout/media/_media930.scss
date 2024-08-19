@@ -1,0 +1,19 @@
+@media (max-width: 930px) {
+
+    .intro h1 {
+        grid-column: 2/12;
+        padding-right: 1.875rem;
+    }
+
+    .intro img {
+        grid-column: 1;
+    }
+
+    .juegos {
+        display: flex;
+    }
+
+    .juegos div {
+        width: 80%;
+    }
+}

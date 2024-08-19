@@ -1,0 +1,30 @@
+header {
+    font-family: "Berkshire Swash", serif;
+    background-color: rgba(30, 50, 89, 0.8);
+    width: 100%;
+    padding: .625rem ;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    gap: 1.25rem;
+    margin-right: 1.25rem;
+    font-size: 2.25rem;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #BBE1FA;
+}
+
+.main-header {
+    position: absolute;
+    z-index: 1;
+}
