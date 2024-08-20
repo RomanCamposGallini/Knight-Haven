@@ -7,19 +7,21 @@
     img{
         position: absolute;
     }
+    #png-1 {
+        top: -1.25rem;
+        right: .625rem;
+    }
+    #png-2 {
+        bottom: -6.25rem;
+        left: -5rem;
+    }
+    .formulario {
+        @include flexbox (column, nowrap, center, center);
+        gap: map-get($spacing, lg);
+    }
 }
 
-#png-1 {
-    top: -1.25rem;
-    right: .625rem;
-}
 
-#png-2 {
-    bottom: -6.25rem;
-    left: -5rem;
-}
 
-.formulario {
-    @include flexbox (column, nowrap, center, center);
-    gap: map-get($spacing, lg);
-}
+
+

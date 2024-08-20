@@ -1,21 +1,37 @@
 @media (max-width: 1260px) {
-
-    .intro p {
+    .intro {
+        p {
         grid-column: 7/12;
+        }
+        h1 {
+            grid-column: 4/12;
+            text-align: end;
+            font-size: 4.5rem;
+            padding: map-get($spacing, sm) map-get($spacing, xxl) map-get($spacing, sm) ;
+        }
+        img {
+            grid-column: 3;
+        }
     }
-
-    .intro h1 {
-        grid-column: 4/12;
-        text-align: end;
-        font-size: 4.5rem;
-        padding: .3125rem 3.125rem .3125rem ;
+    .juegos {
+        div {
+        width: map-get($alto, xm);
+        }
     }
-
-    .intro img {
-        grid-column: 3;
-    }
-
-    .juegos div {
-        width: 25rem;
+    .noticias {
+        div {
+            h2 {
+                font-size: map-get($font-sizes, md);
+            }
+            p {
+                font-size: map-get($font-sizes, sm);
+            }
+        }
+        .noti-1 {
+            margin: 0;
+        }
+        .noti-2{
+            margin: map-get($spacing, lg) 0;
+        }
     }
 }

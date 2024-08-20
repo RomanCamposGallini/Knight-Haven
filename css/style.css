@@ -293,22 +293,19 @@ input[type="submit"] {
     height: auto; }
   .foro img {
     position: absolute; }
-
-#png-1 {
-  top: -1.25rem;
-  right: .625rem; }
-
-#png-2 {
-  bottom: -6.25rem;
-  left: -5rem; }
-
-.formulario {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  gap: 0.9375rem; }
+  .foro #png-1 {
+    top: -1.25rem;
+    right: .625rem; }
+  .foro #png-2 {
+    bottom: -6.25rem;
+    left: -5rem; }
+  .foro .formulario {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.9375rem; }
 
 .intro {
   height: 49.375rem;
@@ -390,13 +387,13 @@ input[type="submit"] {
     width: 15.625rem;
     object-fit: cover; }
 
-.not-1 {
+.main-noticias .not-1 {
   grid-template-areas: "h3 h3" "img p"; }
 
-.not-2 {
-  grid-template-rows: auto 7.1875rem;
+.main-noticias .not-2 {
+  grid-template-rows: auto 1fr;
   grid-template-areas: "p img" "h3 h3"; }
-  .not-2 p {
+  .main-noticias .not-2 p {
     align-self: end;
     text-align: right; }
 
@@ -419,23 +416,21 @@ input[type="submit"] {
 
 @media (max-width: 1350px) {
   .juegos {
-    padding: 1.875rem; }
-  .juegos div {
-    width: 34.375rem;
-    height: auto;
-    grid-template-rows: 5.3125rem 2.5rem auto 5.3125rem;
-    column-gap: .625rem; }
-  .juegos div h2 {
-    font-size: 1.5rem; }
-  .juegos div img {
-    height: 19.5rem;
-    width: 12.8125rem;
-    object-fit: cover; }
-  .juegos div p {
-    font-size: 1rem;
-    padding: 0; }
-  .juegos div .p2 {
-    font-size: 1.25rem; } }
+    padding: 0.625rem; }
+    .juegos div {
+      width: 38.125rem;
+      height: auto;
+      grid-template-rows: 5.3125rem 2.5rem auto 5.3125rem;
+      column-gap: 0.3125rem; }
+      .juegos div h2 {
+        font-size: 1.5rem; }
+      .juegos div img {
+        height: 19.5rem;
+        width: 12.8125rem;
+        object-fit: cover; }
+      .juegos div p {
+        font-size: 1rem;
+        padding: 0; } }
 
 @media (max-width: 1260px) {
   .intro p {
@@ -444,15 +439,23 @@ input[type="submit"] {
     grid-column: 4/12;
     text-align: end;
     font-size: 4.5rem;
-    padding: .3125rem 3.125rem .3125rem; }
+    padding: 0.3125rem 3.75rem 0.3125rem; }
   .intro img {
     grid-column: 3; }
   .juegos div {
-    width: 25rem; } }
+    width: 25rem; }
+  .noticias div h2 {
+    font-size: 1.5rem; }
+  .noticias div p {
+    font-size: 1rem; }
+  .noticias .noti-1 {
+    margin: 0; }
+  .noticias .noti-2 {
+    margin: 0.9375rem 0; } }
 
 @media (max-width: 1100px) {
   header nav img {
-    height: 2.8125rem;
+    height: 2.875rem;
     width: 12.5rem; }
   header nav ul {
     font-size: 1.5rem; } }
@@ -465,128 +468,148 @@ input[type="submit"] {
     grid-column: 1; }
   .juegos {
     display: flex; }
-  .juegos div {
-    width: 80%; } }
+    .juegos div {
+      width: 80%; }
+  .noticias div img {
+    width: 15.625rem;
+    height: 28.125rem; } }
 
 @media (max-width: 755px) {
   .intro {
-    height: 34.375rem; }
-  .intro p {
-    font-size: 1.5rem; }
-  .intro h1 {
-    font-size: 3rem;
-    padding-right: 10%; }
-  .intro img {
-    width: 11.25rem;
-    height: 11.25rem; } }
+    height: 28.125rem; }
+    .intro p {
+      font-size: 1.5rem; }
+    .intro h1 {
+      font-size: 2.25rem;
+      padding-right: 10%; }
+    .intro img {
+      width: 11.25rem;
+      height: 11.25rem; }
+  .main-eventos div {
+    width: 95%; } }
 
 @media (max-width: 700px) {
   header {
-    padding: .3125rem; }
-  header nav {
-    flex-direction: column; }
-  header nav ul {
-    font-size: 12px;
-    margin-right: 0; } }
+    padding: 0.125rem; }
+    header nav {
+      flex-direction: column; }
+      header nav ul {
+        font-size: 12px;
+        margin-right: 0; } }
 
 @media (max-width: 630px) {
   main {
-    padding-bottom: .625rem; }
+    padding-bottom: 0.3125rem; }
   h1 {
-    padding: .3125rem .9375rem .3125rem .9375rem;
+    padding: 0.125rem 0.3125rem;
     font-size: 1.125rem;
-    margin: .9375rem 0;
+    margin: 0.625rem 0;
     border: .125rem solid #BBE1FA; }
   section p {
     font-size: .9375rem; }
   .main-page h2 {
-    padding: .3125rem .9375rem .3125rem .9375rem;
+    padding: 0.125rem 0.3125rem;
     font-size: 1.125rem;
     border: .125rem solid #BBE1FA; }
   .bloque {
     padding: .3125rem;
     margin: 0 .3125rem .3125rem .3125rem; }
-  .bloque div {
-    padding: .25rem; }
-  .bloque div h3 {
-    font-size: .75rem; }
+    .bloque div {
+      padding: .25rem; }
+      .bloque div h3 {
+        font-size: .75rem; }
   footer {
-    padding: .625rem; }
-  footer ul {
-    flex-direction: row;
-    padding: 0; }
-  footer ul li img {
-    width: 1.5rem;
-    height: 1.5rem; }
-  footer ul li a p {
-    display: none; }
-  footer div img {
-    height: 2.8125rem;
-    width: 12.5rem; }
-  footer div p {
-    font-size: .625rem; }
+    padding: 0.625rem; }
+    footer ul {
+      flex-direction: row;
+      padding: 0; }
+      footer ul li img {
+        width: 1.5rem;
+        height: 1.5rem; }
+      footer ul li a p {
+        display: none; }
+    footer div img {
+      height: 2.8125rem;
+      width: 12.5rem; }
+    footer div p {
+      font-size: .625rem; }
   .intro {
     height: 15rem; }
-  .intro h1 {
-    grid-column: 4/12;
-    font-size: 1.375rem;
-    border: .125rem solid #BBE1FA; }
-  .intro p {
-    grid-column: 8/12;
-    font-size: .5625rem;
-    border: .125rem solid #BBE1FA; }
-  .intro img {
-    grid-column: 3;
-    width: 4.0625rem;
-    height: 4.0625rem;
-    border: .125rem solid #BBE1FA; }
+    .intro h1 {
+      grid-column: 4/12;
+      font-size: 1.3125rem;
+      border: .125rem solid #BBE1FA; }
+    .intro p {
+      grid-column: 8/12;
+      font-size: .5625rem;
+      border: .125rem solid #BBE1FA; }
+    .intro img {
+      grid-column: 3;
+      width: 4.0625rem;
+      height: 4.0625rem;
+      border: .125rem solid #BBE1FA; }
   .main-catalogo div {
     height: 13.125rem;
     width: 7.5rem;
     padding: .25rem; }
-  .main-catalogo div img {
-    height: 10.3125rem; }
-  .main-noticias img {
-    width: 8.75rem;
-    height: 12.1875rem; }
+    .main-catalogo div img {
+      height: 10.3125rem; }
   .main-noticias div {
+    height: 15.625rem;
+    width: 400px;
     row-gap: .3125rem; }
-  .main-noticias p {
-    font-size: .625rem; }
-  .not-2 {
+    .main-noticias div img {
+      width: 8.75rem;
+      height: 12.1875rem; }
+    .main-noticias div p {
+      font-size: .625rem; }
+  .main-noticias .not-2 {
     grid-template-rows: auto auto;
     grid-template-areas: "h3 h3" "img p"; }
-  .not-2 p {
-    align-self: start;
-    text-align: left; }
+    .main-noticias .not-2 p {
+      align-self: start;
+      text-align: left; }
   .main-eventos div {
     height: auto;
     row-gap: .3125rem; }
   .juegos {
     padding: .3125rem;
     margin: 0 .3125rem .3125rem .3125rem; }
-  .juegos div {
-    width: 18.125rem;
-    height: auto;
-    grid-template-rows: auto 1.25rem auto 3.125rem;
-    column-gap: .3125rem;
-    row-gap: .3125rem;
-    padding: .25rem;
-    grid-template-areas: "img h2" "img p" "img p2" "but but"; }
-  .juegos div h2 {
-    font-size: 1.25rem; }
-  .juegos div img {
-    height: 14.375rem;
-    width: 9.0625rem;
-    object-fit: cover; }
-  .juegos div p {
-    font-size: .625rem;
-    padding: 0; }
-  .juegos div .p2 {
+    .juegos div {
+      width: 18.125rem;
+      height: auto;
+      grid-template-rows: auto 1.25rem auto 3.125rem;
+      column-gap: .3125rem;
+      row-gap: .3125rem;
+      padding: .25rem;
+      grid-template-areas: "img h2" "img p2" "img p" "but but"; }
+      .juegos div h2 {
+        font-size: 1.25rem; }
+      .juegos div img {
+        height: 14.375rem;
+        width: 9.0625rem;
+        object-fit: cover; }
+      .juegos div p {
+        font-size: .8125rem;
+        padding: 0; }
+      .juegos div .p2 {
+        font-size: .625rem; }
+      .juegos div button {
+        font-size: 1.5rem;
+        margin-bottom: .3125rem; }
+  .noticias div h2 {
+    font-size: 1.125rem; }
+  .noticias div p {
     font-size: .8125rem; }
-  .juegos div button {
-    font-size: 1.5rem;
-    margin-bottom: .3125rem; } }
+  .noticias div img {
+    height: 14.375rem;
+    width: 100%; }
+  .noticias .noti-1 {
+    grid-template-areas: "h2" "img " "p"; }
+  .noticias .noti-2 {
+    grid-template-areas: "h2" "img " "p"; }
+    .noticias .noti-2 p {
+      text-align: left; } }
 
 @media (max-width: 375px) {
   footer div img {

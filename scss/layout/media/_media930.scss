@@ -1,19 +1,25 @@
 @media (max-width: 930px) {
-
-    .intro h1 {
-        grid-column: 2/12;
-        padding-right: 1.875rem;
+    .intro {
+        h1 {
+            grid-column: 2/12;
+            padding-right: map-get($spacing, xl);
+        }
+        img {
+            grid-column: 1;
+        }
     }
-
-    .intro img {
-        grid-column: 1;
-    }
-
     .juegos {
         display: flex;
+        div {
+            width: 80%;
+        }
     }
-
-    .juegos div {
-        width: 80%;
+    .noticias {
+        div {
+            img {
+                width: map-get($ancho, md);
+                height: map-get($alto, lg);
+            }
+        }
     }
 }

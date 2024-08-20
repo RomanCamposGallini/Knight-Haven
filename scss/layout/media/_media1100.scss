@@ -1,10 +1,13 @@
 @media (max-width: 1100px) {
-
-    header nav img {
-        height: 2.8125rem;
-        width: 12.5rem;
-    }
-    header nav ul{
-        font-size: 1.5rem;
+    header {
+        nav {
+            img {
+                height: map-get($ancho, xs);
+                width: 12.5rem;
+            }
+            ul{
+                font-size: map-get($font-sizes, md);
+            }
+        }
     }
 }

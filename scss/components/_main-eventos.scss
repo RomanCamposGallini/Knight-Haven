@@ -1,9 +1,11 @@
-.main-eventos div {
-    width: map-get($ancho, xl);
-    height: map-get($alto, xl);
-    display: flex;
-    flex-flow: column;
-}
-.main-eventos h3 {
-    margin: auto;
+.main-eventos{
+    div {
+        width: map-get($ancho, xl);
+        height: map-get($alto, xl);
+        display: flex;
+        flex-flow: column;
+    }
+    h3 {
+        margin: auto;
+    }
 }

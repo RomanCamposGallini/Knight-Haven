@@ -1,6 +1,10 @@
 @media (max-width: 375px) {
-    footer div img {
-        height: 2.1875rem;
-        width: 9.375rem;
+    footer {
+        div {
+            img {
+                height: 2.1875rem;
+                width: 9.375rem;
+            }
+        }
     }
 }

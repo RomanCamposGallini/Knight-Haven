@@ -10,21 +10,19 @@
             object-fit: cover;
         }
     }
-}
-
-.not-1 {
-    grid-template-areas: 
-    "h3 h3"
-    "img p";
-}
-
-.not-2 {
-    grid-template-rows: auto 7.1875rem;
-    grid-template-areas: 
-    "p img"
-    "h3 h3";
-    p{
-        align-self: end;
-        text-align: right;
+    .not-1 {
+        grid-template-areas: 
+        "h3 h3"
+        "img p";
+    }
+    .not-2 {
+        grid-template-rows: auto 1fr;
+        grid-template-areas: 
+        "p img"
+        "h3 h3";
+        p{
+            align-self: end;
+            text-align: right;
+        }
     }
 }

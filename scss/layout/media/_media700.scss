@@ -1,15 +1,12 @@
 @media (max-width: 700px) {
-
     header {
-        padding: .3125rem;
-    }
-
-    header nav {
-        flex-direction: column;
-    }
-
-    header nav ul {
-        font-size: 12px;
-        margin-right: 0;
+        padding: map-get($spacing, xs);
+        nav {
+            flex-direction: column;
+            ul {
+                font-size: 12px;
+                margin-right: 0;
+            }
+        }
     }
 }
