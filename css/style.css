@@ -63,6 +63,10 @@ header {
       header nav ul li a {
         color: #BBE1FA;
         text-decoration: none; }
+      header nav ul li a:hover {
+        color: rgba(138, 136, 191, 0.5); }
+    header nav img:hover {
+      transform: scale(1.1); }
 
 .main-header {
   position: absolute;
@@ -147,6 +151,9 @@ footer {
         margin: 0;
         font-size: 1rem;
         text-align: center; }
+  .bloque div:hover {
+    transform: scale(1.1);
+    border: .125rem solid #BBE1FA; }
 
 .carousel-item img {
   max-height: 900px; }
@@ -285,6 +292,9 @@ input[type="submit"] {
     width: 68.75rem;
     height: auto;
     border: #1e3259 0.625rem solid; }
+  .eventos div div:hover {
+    transform: none;
+    border: none; }
 
 .foro {
   position: relative; }

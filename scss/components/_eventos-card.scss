@@ -7,5 +7,9 @@
             height: auto;
             border: map-get($colors, color3) map-get($spacing, md) solid;
         }
+        div:hover {
+            transform: none;
+            border: none;
+        }
     }
 }
