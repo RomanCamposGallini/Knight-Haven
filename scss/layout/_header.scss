@@ -1,29 +1,23 @@
 header {
-    font-family: "Berkshire Swash", serif;
-    background-color: rgba(30, 50, 89, 0.8);
+    font-family: $font-titular;
+    background-color: map-get($colors, color4);
     width: 100%;
-    padding: .625rem ;
+    padding: map-get($spacing, md);
+    nav {
+        @include flexbox (row, nowrap, space-between, center);
+        ul {
+            display: flex;
+            gap: map-get($spacing, lg);
+            margin-right: map-get($spacing, lg);
+            font-size: map-get($font-sizes, xl);
+            list-style: none;
+            li a {
+                color: map-get($colors, color1);
+                text-decoration: none;
+            }
+        }
+    }
 }
-
-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header nav ul {
-    display: flex;
-    gap: 1.25rem;
-    margin-right: 1.25rem;
-    font-size: 2.25rem;
-    list-style: none;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: #BBE1FA;
-}
-
 .main-header {
     position: absolute;
     z-index: 1;

@@ -9,10 +9,6 @@
 
 @import "./layout/header";
 @import "./layout/main";
-@import "./layout/intro";
-@import "./layout/main-catalogo";
-@import "./layout/main-eventos";
-@import "./layout/main-noticias";
 @import "./layout/footer";
 
 @import "./components/bloques";
@@ -24,6 +20,10 @@
 @import "./components/noticias-card";
 @import "./components/eventos-card";
 @import "./components/foro-card";
+@import "./components/intro";
+@import "./components/main-noticias";
+@import "./components/main-catalogo";
+@import "./components/main-eventos";
 
 
 @import "./layout/media/media1350";

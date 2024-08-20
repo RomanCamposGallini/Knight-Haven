@@ -1,37 +1,32 @@
 footer {
-    background-color: rgba(30, 50, 89, 0.8);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.875rem;
-}
-
-footer ul {
-    font-family: "Poetsen One", sans-serif;
-    list-style: none;
-    display: flex;
-    flex-flow: column;
-}
-
-footer ul li a {
-    display: flex;
-    justify-content: row;
-    align-items: center;
-    text-decoration: none;
-}
-
-footer ul li p {
-    color: #BBE1FA;
-}
-
-footer ul li img {
-    width: 2.875rem;
-    height: 2.875rem;
-    margin: .625rem;
-}
-
-footer div p {
-    font-family: "Poetsen One", sans-serif;
-    color: #BBE1FA;
-    text-align: end;
+    background-color: map-get($colors, color4);
+    @include flexbox (row, nowrap, space-between, center);
+    padding: map-get($spacing, xl);
+    ul {
+        font-family: $font-suplente;
+        list-style: none;
+        display: flex;
+        flex-flow: column;
+        li {
+            a {
+                @include flexbox (row, nowrap, row, center);
+                text-decoration: none;
+            }
+            p {
+                color: map-get($colors, color1);
+            }
+            img {
+            width: map-get($ancho, xs);
+            height: map-get($ancho, xs);
+            margin: map-get($spacing, md);
+            }
+        }
+    }
+    div {
+        p {
+        font-family: $font-suplente;
+        color: map-get($colors, color1);
+        text-align: end;
+        }
+    }
 }

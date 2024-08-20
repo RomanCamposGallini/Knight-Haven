@@ -25,6 +25,10 @@
         grid-area: h2;
         margin: auto;
     }
+    h3 {
+        grid-area: h3;
+        margin: auto;
+    }
     .p2 {
         font-size: map-get($font-sizes, sm);
         grid-area: p2;

@@ -1,0 +1,30 @@
+.main-noticias {
+    div {
+        width: map-get($ancho, xl);
+        height: map-get($alto, xxl);
+        @include grid;
+        grid-template-columns: auto 1fr;
+        img {
+            height: map-get($alto, xm);
+            width: map-get($ancho, md);
+            object-fit: cover;
+        }
+    }
+}
+
+.not-1 {
+    grid-template-areas: 
+    "h3 h3"
+    "img p";
+}
+
+.not-2 {
+    grid-template-rows: auto 7.1875rem;
+    grid-template-areas: 
+    "p img"
+    "h3 h3";
+    p{
+        align-self: end;
+        text-align: right;
+    }
+}

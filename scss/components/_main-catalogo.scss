@@ -1,0 +1,9 @@
+.main-catalogo div {
+    width: map-get($ancho, md);
+    height: map-get($alto, lg);
+    display: flex;
+    flex-flow: column;
+    img {
+        height: 20rem;
+    }
+}
