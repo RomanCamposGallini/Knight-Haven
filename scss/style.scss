@@ -1,4 +1,6 @@
-@import "./utilities/funciones";
+@import "./utilities/variables";
+@import "./utilities/maps";
+@import "./utilities/mixins";
 
 @import "./base/reset";
 @import "./base/fuentes";
@@ -11,10 +13,6 @@
 @import "./layout/main-catalogo";
 @import "./layout/main-eventos";
 @import "./layout/main-noticias";
-@import "./layout/catalogo";
-@import "./layout/noticias";
-@import "./layout/eventos";
-@import "./layout/foro";
 @import "./layout/footer";
 
 @import "./components/bloques";
@@ -22,6 +20,11 @@
 @import "./components/botones";
 @import "./components/form";
 @import "./components/input";
+@import "./components/catalogo-card";
+@import "./components/noticias-card";
+@import "./components/eventos-card";
+@import "./components/foro-card";
+
 
 @import "./layout/media/media1350";
 @import "./layout/media/media1260";

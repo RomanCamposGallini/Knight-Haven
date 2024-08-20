@@ -1,0 +1,85 @@
+@mixin borde {
+    border-color: map-get($colors, color1);
+    border-width: map-get($spacing, sm);
+    border-style: solid;
+}
+
+@mixin flexbox($direction, $wrap, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin grid {
+    display: grid;
+    column-gap: map-get($spacing, sm);
+    img {
+        grid-area: img;
+        height: map-get($alto, xm);
+        width: map-get($ancho, md);
+        object-fit: cover;
+    }
+    h2 {
+        grid-area: h2;
+        margin: auto;
+    }
+    .p2 {
+        font-size: map-get($font-sizes, sm);
+        grid-area: p2;
+    }
+    p {
+        grid-area: p;
+        text-align: left;
+    }
+    button {
+        grid-area: but;
+        @include boton;
+        margin: auto;
+    }
+}
+
+@mixin title {
+    font-family: $font-titular;
+    font-size: map-get($font-sizes, xl);
+    color: map-get($colors, color1);
+    background-color: map-get($colors, color5);
+    @include borde;
+    padding: map-get($spacing, sm) map-get($spacing, xxl);
+    margin: map-get($spacing, xl) 0;
+    display: inline-block;
+}
+
+@mixin parrafo-principal {
+    font-family: $font-titular;
+    font-size: map-get($font-sizes, lg);
+    color: map-get($colors, color1);
+    padding: 10% 20%;
+    text-align: center;
+}
+
+@mixin title-interno {
+    font-family: $font-suplente;
+    font-size: map-get($font-sizes, lg);
+    color: map-get($colors, color1);
+    padding: map-get($spacing, sm);
+    text-align: center;
+}
+
+@mixin texto-interno {
+    font-family: $font-suplente;
+    font-size: map-get($font-sizes, md);
+    color: map-get($colors, color1);
+    padding: map-get($spacing, sm);
+    margin: 0;
+}
+
+@mixin boton {
+    font-family: $font-titular;
+    font-size: map-get($font-sizes, lg);
+    color: map-get($colors, color1); 
+    background-color: map-get($colors, color5); 
+    text-align: center;
+    @include borde;
+}

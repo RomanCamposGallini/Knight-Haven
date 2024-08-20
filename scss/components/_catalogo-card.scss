@@ -1,0 +1,18 @@
+.juegos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    padding: map-get($spacing, xl);
+    div {
+        width: map-get($ancho, xl);
+        height: map-get($alto, xl);
+        @include grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: map-get($alto, sm) map-get($alto, xs) auto auto;
+        grid-template-areas:
+        "img h2"
+        "img p2"
+        "img p"
+        "img but";
+    }
+}

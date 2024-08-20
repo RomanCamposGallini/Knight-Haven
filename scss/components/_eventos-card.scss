@@ -1,0 +1,11 @@
+.eventos {
+    div{
+        width: map-get($ancho, xxl);
+        @include flexbox(column, nowrap, center, center);
+        img {
+            width: map-get($ancho, xxl); 
+            height: auto;
+            border: map-get($colors, color3) map-get($spacing, md) solid;
+        }
+    }
+}

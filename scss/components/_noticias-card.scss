@@ -1,0 +1,26 @@
+.noticias {
+    div{
+        width: map-get($ancho, xxl);
+        height: auto;
+        @include grid;
+        img {
+            width: map-get($ancho, lg);
+            height: map-get($alto, xxl);
+        }
+    }
+    .noti-1 {
+        margin-right: map-get($ancho, sm);
+        grid-template-areas: 
+        "img h2"
+        "img p";
+    }
+    .noti-2 {
+        margin-left: map-get($ancho, sm);
+        grid-template-areas:
+        "h2 img"
+        "p img";
+        p {
+            text-align: right;
+        }
+    }
+}
