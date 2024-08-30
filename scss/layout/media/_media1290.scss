@@ -1,4 +1,4 @@
-@media (max-width: 1260px) {
+@media (max-width: 1290px) {
     .intro {
         p {
         grid-column: 7/12;
@@ -32,6 +32,15 @@
         }
         .noti-2{
             margin: map-get($spacing, lg) 0;
+        }
+    }
+    .eventos {
+        padding: map-get($spacing, md);
+        div {
+            width: map-get($ancho, xl);
+            img {
+                width: 100%;
+            }
         }
     }
 }

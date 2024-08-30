@@ -9,4 +9,21 @@
             }
         }
     }
+    .eventos {
+        div {
+            width: map-get($ancho, lg);
+            h2 {
+                font-size: map-get($font-sizes, md);
+            }
+            p {
+                font-size: map-get($font-sizes, sm);
+            }
+            ul {
+                padding: map-get($spacing, sm);
+                li {
+                    font-size: map-get($font-sizes, xs);
+                }
+            }
+        }
+    }
 }
