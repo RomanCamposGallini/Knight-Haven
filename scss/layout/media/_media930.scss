@@ -22,4 +22,25 @@
             }
         }
     }
+    .foro {
+        div {
+            width: map-get($ancho, xl);
+            input {
+                width: map-get($ancho, lg);
+                font-size: map-get($font-sizes, md);
+            }
+            input[type="submit"] {
+                width: map-get($ancho, md);
+            }
+        }
+        img {
+            width: map-get($ancho, md);
+        }
+        #png-1 {
+            top: -9.375rem;
+        }
+        #png-2 {
+            width: map-get($ancho, lg);
+        }
+    }
 }

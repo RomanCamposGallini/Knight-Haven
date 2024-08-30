@@ -300,6 +300,9 @@ input[type="submit"] {
   .foro div {
     width: 68.75rem;
     height: auto; }
+  .foro div:hover {
+    transform: none;
+    border: none; }
   .foro img {
     position: absolute; }
   .foro #png-1 {
@@ -489,7 +492,20 @@ input[type="submit"] {
       width: 80%; }
   .noticias div img {
     width: 15.625rem;
-    height: 28.125rem; } }
+    height: 28.125rem; }
+  .foro div {
+    width: 38.125rem; }
+    .foro div input {
+      width: 21.875rem;
+      font-size: 1.5rem; }
+    .foro div input[type="submit"] {
+      width: 15.625rem; }
+  .foro img {
+    width: 15.625rem; }
+  .foro #png-1 {
+    top: -9.375rem; }
+  .foro #png-2 {
+    width: 21.875rem; } }
 
 @media (max-width: 755px) {
   .intro {
@@ -636,7 +652,28 @@ input[type="submit"] {
   .noticias .noti-2 {
     grid-template-areas: "h2" "img " "p"; }
     .noticias .noti-2 p {
-      text-align: left; } }
+      text-align: left; }
+  .foro div {
+    width: 21.875rem; }
+    .foro div label {
+      font-size: 1rem; }
+    .foro div input {
+      width: 15.625rem;
+      height: 1.875rem;
+      font-size: 1rem;
+      border: .125rem solid #BBE1FA; }
+    .foro div input[type="submit"] {
+      width: 7.5rem; }
+  .foro .formulario {
+    gap: 0.3125rem; }
+  .foro img {
+    width: 7.5rem; }
+  .foro #png-1 {
+    top: -1.25rem; }
+  .foro #png-2 {
+    width: 15.625rem;
+    bottom: -2.5rem;
+    left: -2.5rem; } }
 
 @media (max-width: 375px) {
   footer div img {
@@ -647,4 +684,21 @@ input[type="submit"] {
     .eventos div h2 {
       font-size: 1.125rem; }
     .eventos div p {
-      font-size: .8125rem; } }
+      font-size: .8125rem; }
+  .foro div {
+    width: 15.625rem; }
+    .foro div label {
+      font-size: 0.6875rem; }
+    .foro div input {
+      width: 7.5rem;
+      height: 1.25rem;
+      font-size: 0.6875rem; }
+  .foro img {
+    width: 7.5rem; }
+  .foro #png-1 {
+    top: -3.75rem;
+    right: -0.3125rem; }
+  .foro #png-2 {
+    width: 7.5rem;
+    bottom: -1.25rem;
+    left: -1.25rem; } }

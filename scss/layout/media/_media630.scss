@@ -182,4 +182,35 @@
             }
         }
     }
+    .foro {
+        div {
+            width: map-get($ancho, lg);
+            label {
+                font-size: map-get($font-sizes, sm);
+            }
+            input {
+                width: map-get($ancho, md);
+                height: 1.875rem;
+                font-size: map-get($font-sizes, sm);
+                border: .125rem solid #BBE1FA;
+            }
+            input[type="submit"] {
+                width: map-get($ancho, sm);
+            }
+        }
+        .formulario {
+            gap: map-get($spacing, sm);
+        }
+        img {
+            width: map-get($ancho, sm);
+        }
+        #png-1 {
+            top: -1.25rem;
+        }
+        #png-2 {
+            width: map-get($ancho, md);
+            bottom: -2.5rem;
+            left: -2.5rem;
+        }
+    }
 }
